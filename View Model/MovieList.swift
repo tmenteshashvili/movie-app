@@ -10,7 +10,7 @@ import SwiftUI
 struct MovieList: View {
     var title: String
     var movies: [Movie]
-
+    
     
     var body: some View {
         VStack(alignment: .leading){
