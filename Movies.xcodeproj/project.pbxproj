@@ -12,8 +12,8 @@
 		3C52383027B6A959005227A7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52382F27B6A959005227A7 /* MainView.swift */; };
 		3C52383427BFC9C0005227A7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52383327BFC9C0005227A7 /* ProfileView.swift */; };
 		3C52383627C94AF0005227A7 /* Cast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52383527C94AF0005227A7 /* Cast.swift */; };
-		3C52383827C950B0005227A7 /* castNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52383727C950B0005227A7 /* castNetwork.swift */; };
-		3CDBB83B27A9A9D300A26F6F /* moviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDBB83A27A9A9D300A26F6F /* moviesApp.swift */; };
+		3C52383827C950B0005227A7 /* CastNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52383727C950B0005227A7 /* CastNetwork.swift */; };
+		3CDBB83B27A9A9D300A26F6F /* MoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDBB83A27A9A9D300A26F6F /* MoviesApp.swift */; };
 		3CDBB83D27A9A9D300A26F6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDBB83C27A9A9D300A26F6F /* ContentView.swift */; };
 		3CDBB83F27A9A9D400A26F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CDBB83E27A9A9D400A26F6F /* Assets.xcassets */; };
 		3CDBB84227A9A9D400A26F6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CDBB84127A9A9D400A26F6F /* Preview Assets.xcassets */; };
@@ -28,9 +28,9 @@
 		3C52382F27B6A959005227A7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3C52383327BFC9C0005227A7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3C52383527C94AF0005227A7 /* Cast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cast.swift; sourceTree = "<group>"; };
-		3C52383727C950B0005227A7 /* castNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = castNetwork.swift; sourceTree = "<group>"; };
-		3CDBB83727A9A9D300A26F6F /* movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CDBB83A27A9A9D300A26F6F /* moviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moviesApp.swift; sourceTree = "<group>"; };
+		3C52383727C950B0005227A7 /* CastNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastNetwork.swift; sourceTree = "<group>"; };
+		3CDBB83727A9A9D300A26F6F /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CDBB83A27A9A9D300A26F6F /* MoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesApp.swift; sourceTree = "<group>"; };
 		3CDBB83C27A9A9D300A26F6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3CDBB83E27A9A9D400A26F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CDBB84127A9A9D400A26F6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				3CDBB84A27A9AE6000A26F6F /* Network.swift */,
-				3C52383727C950B0005227A7 /* castNetwork.swift */,
+				3C52383727C950B0005227A7 /* CastNetwork.swift */,
 			);
 			path = "API Service ";
 			sourceTree = "<group>";
@@ -83,7 +83,7 @@
 		3CDBB82E27A9A9D300A26F6F = {
 			isa = PBXGroup;
 			children = (
-				3CDBB83927A9A9D300A26F6F /* movies */,
+				3CDBB83927A9A9D300A26F6F /* Movies */,
 				3CDBB83827A9A9D300A26F6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,23 +91,23 @@
 		3CDBB83827A9A9D300A26F6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3CDBB83727A9A9D300A26F6F /* movies.app */,
+				3CDBB83727A9A9D300A26F6F /* Movies.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3CDBB83927A9A9D300A26F6F /* movies */ = {
+		3CDBB83927A9A9D300A26F6F /* Movies */ = {
 			isa = PBXGroup;
 			children = (
 				3C52383B27CCED64005227A7 /* View Model */,
 				3C52383A27CCED4D005227A7 /* API Service  */,
 				3C52383927CCECF9005227A7 /* Model */,
-				3CDBB83A27A9A9D300A26F6F /* moviesApp.swift */,
+				3CDBB83A27A9A9D300A26F6F /* MoviesApp.swift */,
 				3CDBB83C27A9A9D300A26F6F /* ContentView.swift */,
 				3CDBB83E27A9A9D400A26F6F /* Assets.xcassets */,
 				3CDBB84027A9A9D400A26F6F /* Preview Content */,
 			);
-			path = movies;
+			path = Movies;
 			sourceTree = "<group>";
 		};
 		3CDBB84027A9A9D400A26F6F /* Preview Content */ = {
@@ -121,9 +121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3CDBB83627A9A9D300A26F6F /* movies */ = {
+		3CDBB83627A9A9D300A26F6F /* Movies */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CDBB84527A9A9D400A26F6F /* Build configuration list for PBXNativeTarget "movies" */;
+			buildConfigurationList = 3CDBB84527A9A9D400A26F6F /* Build configuration list for PBXNativeTarget "Movies" */;
 			buildPhases = (
 				3CDBB83327A9A9D300A26F6F /* Sources */,
 				3CDBB83427A9A9D300A26F6F /* Frameworks */,
@@ -133,9 +133,9 @@
 			);
 			dependencies = (
 			);
-			name = movies;
+			name = Movies;
 			productName = movies;
-			productReference = 3CDBB83727A9A9D300A26F6F /* movies.app */;
+			productReference = 3CDBB83727A9A9D300A26F6F /* Movies.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +153,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3CDBB83227A9A9D300A26F6F /* Build configuration list for PBXProject "movies" */;
+			buildConfigurationList = 3CDBB83227A9A9D300A26F6F /* Build configuration list for PBXProject "Movies" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,7 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3CDBB83627A9A9D300A26F6F /* movies */,
+				3CDBB83627A9A9D300A26F6F /* Movies */,
 			);
 		};
 /* End PBXProject section */
@@ -193,11 +193,11 @@
 				3C52383627C94AF0005227A7 /* Cast.swift in Sources */,
 				3C52383027B6A959005227A7 /* MainView.swift in Sources */,
 				3CDBB83D27A9A9D300A26F6F /* ContentView.swift in Sources */,
-				3CDBB83B27A9A9D300A26F6F /* moviesApp.swift in Sources */,
+				3CDBB83B27A9A9D300A26F6F /* MoviesApp.swift in Sources */,
 				3C5237E227B271A1005227A7 /* MovieList.swift in Sources */,
 				3CDBB84B27A9AE6000A26F6F /* Network.swift in Sources */,
 				3CDBB84927A9AA5100A26F6F /* Movie.swift in Sources */,
-				3C52383827C950B0005227A7 /* castNetwork.swift in Sources */,
+				3C52383827C950B0005227A7 /* CastNetwork.swift in Sources */,
 				3C5237E627B2D832005227A7 /* MovieDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"movies/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Movies/Preview Content\"";
 				DEVELOPMENT_TEAM = 6VNA79VZQ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -357,7 +357,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"movies/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Movies/Preview Content\"";
 				DEVELOPMENT_TEAM = 6VNA79VZQ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -382,7 +382,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3CDBB83227A9A9D300A26F6F /* Build configuration list for PBXProject "movies" */ = {
+		3CDBB83227A9A9D300A26F6F /* Build configuration list for PBXProject "Movies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CDBB84327A9A9D400A26F6F /* Debug */,
@@ -391,7 +391,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CDBB84527A9A9D400A26F6F /* Build configuration list for PBXNativeTarget "movies" */ = {
+		3CDBB84527A9A9D400A26F6F /* Build configuration list for PBXNativeTarget "Movies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CDBB84627A9A9D400A26F6F /* Debug */,

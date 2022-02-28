@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct moviesApp: App {
+struct MoviesApp: App {
     var network = Network()
     
     var body: some Scene {
