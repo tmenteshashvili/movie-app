@@ -11,7 +11,6 @@ struct Movie: Identifiable,Decodable {
     var overview: String
     var backdrop_path: String
     
-//    var runtime: Int
     
     
     

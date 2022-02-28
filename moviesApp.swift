@@ -12,14 +12,14 @@ struct moviesApp: App {
     var network = Network()
     
     var body: some Scene {
-      
+        
         WindowGroup {
             MainView()
                 .environmentObject(network)
         }
     }
 }
-    
+
 
 struct MoviesApp_previews: PreviewProvider {
     static var previews: some View {
@@ -27,4 +27,4 @@ struct MoviesApp_previews: PreviewProvider {
             .environmentObject(Network())
     }
 }
-    
+

@@ -15,11 +15,8 @@ struct Cast: Identifiable, Decodable {
     var name: String
     var profile_path: String
     
-    
-    
     func getProfileImage() -> URL {
         return URL(string: "https://image.tmdb.org/t/p/w500/" +  self.profile_path)!;
-        
     }
     
 }
